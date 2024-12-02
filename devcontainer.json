@@ -1,0 +1,12 @@
+{
+  "name": "Ubuntu Latest with Root",
+  "dockerFile": "Dockerfile",
+  "runArgs": ["--cap-add=SYS_ADMIN", "--security-opt=apparmor:unconfined"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "./setup.sh",
+  "extensions": [
+    "ms-vscode-remote.remote-containers"
+  ]
+}
